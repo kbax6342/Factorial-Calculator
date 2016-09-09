@@ -26,12 +26,20 @@ public class Factorial {
 		System.out.println("Enter and integer that's greater that 0 but less than 10: ");
 			n = input.nextInt();
 			
+			//result = factorial(n);
+			
+		if(n < 0){
+			System.out.println("Please put in a positive number");
+		}else{
+			System.out.println("The factorial of "+ n + " is " +  factorial(n)  + ".");
+		}
+			
 		
-		result = factorial(n);
+		
 		
 		//Print the Factorial to the Console (use are for loop)	
 		
-		System.out.println("The factorial of "+ n + " is " +  result  + ".");
+		
 		
 		System.out.println("Contintue (yes/no): ");
 			cont = input.nextLine();
